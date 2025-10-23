@@ -1,7 +1,7 @@
 /* Modern CSS Variables for consistent theming */
 :root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary-color: color-mix(in srgb, var(--primary-hover) 80%, black); 
+  --primary-hover: rgb(115, 203, 230);;
   --secondary-color: #64748b;
   --accent-color: #0ea5e9;
   --text-primary: #1e293b;
@@ -309,7 +309,7 @@ body {
 }
 
 /* Section Titles */
-.title.is-3 {
+.title.is-3, .title.is-3-no-underline {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   color: var(--text-primary);
@@ -750,4 +750,31 @@ a:focus {
 }
 
 
+/* Booktabs Table Styling */
+table.booktabs {
+  border-collapse: collapse;
+  margin: 1em auto;
+  font-size: 14px;
+}
+table.booktabs th,
+table.booktabs td {
+  padding: 6px 12px;
+  text-align: center;
+}
+table.booktabs thead tr:first-child {
+  border-bottom: 2px solid black;
+}
+table.booktabs tbody tr {
+  border-bottom: 1px solid #aaa;
+}
+table.booktabs tbody tr:last-child {
+  border-bottom: 2px solid black;
+}
 
+.booktabs tr.midrule td {
+  border-top: 2px solid #000; /* thicker than normal row lines */
+}
+
+.booktabs tr.highlight td {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+}
