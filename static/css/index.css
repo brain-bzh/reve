@@ -775,6 +775,7 @@ table.booktabs tbody tr:last-child {
   border-top: 2px solid #000; /* thicker than normal row lines */
 }
 
-.booktabs tr.highlight td {
+.booktabs tr.highlight td,
+.booktabs td.highlight{
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
 }

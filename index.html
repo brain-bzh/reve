@@ -4,27 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="REVE - NEURIPS 2025">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="We present REVE, a foundation model for EEG data trained on 60k hours of data from 25k subjects. REVE achieves state-of-the-art results on multiple key EEG benchmarks.">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="EEG, foundation model, deep learning, neuroscience, brain-computer interface">
-  <!-- TODO: List all authors -->
   <meta name="author" content="Yassine El Ouahidi, Jonathan Lys, Philipp Thölke, Nicolas Farrugia, Bastien Pasdeloup, Vincent Gripon, Karim Jerbi, Giulia Lioi">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="RAIN: BRoader Artificial Intelligence">
-  <!-- TODO: Same as paper title above -->
+  <meta property="og:site_name" content="BRAIN: BRoader Artificial Intelligence">
   <meta property="og:title" content="REVE: A Foundation Model for EEG - Adapting to Any Setup with Large-Scale Pretraining on 25,000 Subjects">
-  <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://www.imt-atlantique.fr/fr/recherche-innovation/equipe/brain">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/20281635?s=200&v=4">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -35,7 +25,6 @@
   <meta property="article:tag" content="EEG">
   <meta property="article:tag" content="foundation model">
 
-  <!-- Academic/Research Specific -->
   <meta name="citation_title" content="REVE: A Foundation Model for EEG - Adapting to Any Setup with Large-Scale Pretraining on 25,000 Subjects">
   <meta name="citation_author" content="El Ouahidi, Yassine">
   <meta name="citation_author" content="Lys, Jonathan">
@@ -49,13 +38,11 @@
   <meta name="citation_conference_title" content="NeurIPS">
   <meta name="citation_pdf_url" content="https://neurips.cc/virtual/2025/poster/117334">
   
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
@@ -64,18 +51,14 @@
   <link rel="preconnect" href="https://cdn.plot.ly">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
   <title>REVE: A Foundation Model for EEG</title>
   
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
   
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -85,7 +68,6 @@
   <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
   
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -93,10 +75,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -104,7 +84,6 @@
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
-  <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -205,7 +184,6 @@
 <body>
 
 
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
@@ -216,32 +194,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
             <h1 class="title is-1 publication-title">REVE: A Foundation Model for EEG <br> Adapting to Any Setup with Large-Scale Pretraining on 25,000 Subjects</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yassine El Ouahidi</a><sup>1</sup></span>
+                <a href="https://scholar.google.com/citations?user=BGZsbNgAAAAJ" target="_blank">Yassine El Ouahidi</a><sup>1</sup></span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jonathan Lys</a><sup>1</sup></span>
+                  <a href="https://scholar.google.com/citations?user=heUq7WEAAAAJ" target="_blank">Jonathan Lys</a><sup>1</sup></span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Philipp Thölke</a><sup>2</sup></span>
+                    <a href="https://scholar.google.com/citations?user=cLA3Bz8AAAAJ" target="_blank">Philipp Thölke</a><sup>2</sup></span>
                     <span class="author-block">
-                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Nicolas Farrugia</a><sup>1</sup></span>
+                      <a href="https://scholar.google.com/citations?user=IO4nLK4AAAAJ" target="_blank">Nicolas Farrugia</a><sup>1</sup></span>
                       <br>
                       <span class="author-block">
-                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Bastien Pasdeloup</a><sup>1</sup></span>
+                        <a href="https://scholar.google.com/citations?user=dKOgoG4AAAAJ" target="_blank">Bastien Pasdeloup</a><sup>1</sup></span>
                         <span class="author-block">
-                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Vincent Gripon</a><sup>1</sup></span>
+                          <a href="https://scholar.google.com/citations?user=n3IKEqgAAAAJ" target="_blank">Vincent Gripon</a><sup>1</sup></span>
                           <span class="author-block">
-                            <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Karim Jerbi</a><sup>2</sup></span>
+                            <a href="https://scholar.google.com/citations?user=FvXuJbUAAAAJ" target="_blank">Karim Jerbi</a><sup>2</sup></span>
                             <span class="author-block">
-                              <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Giulia Lioi</a><sup>1</sup>
+                              <a href="https://scholar.google.com/citations?user=mx2AqLYAAAAJ" target="_blank">Giulia Lioi</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
                     <span class="author-block">
                       <sup>1</sup>IMT Atlantique <sup>2</sup>Université de Montréal
                       <br>NeurIPS 2025</span>
@@ -249,8 +224,7 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
+                         <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -260,7 +234,6 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -271,7 +244,6 @@
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -282,7 +254,6 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -305,14 +276,12 @@
     <p class="is-size-5 mt-3">Overview of the REVE architecture and training pipeline.</p>
   </div>
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
             Foundation models have transformed AI by reducing reliance on task-specific data through large-scale pretraining. While successful in language and vision, their adoption in EEG has lagged due to the heterogeneity of public datasets, which are collected under varying protocols, devices, and electrode configurations. Existing EEG foundation models struggle to generalize across these variations, often restricting pretraining to a single setup, resulting in suboptimal performance, in particular under linear probing. We present REVE (Representation for EEG with Versatile Embeddings), a pretrained model explicitly designed to generalize across diverse EEG signals. REVE introduces a novel 4D positional encoding scheme that enables it to process signals of arbitrary length and electrode arrangement. Using a masked autoencoding objective, we pretrain REVE on over 60,000 hours of EEG data from 92 datasets spanning 25,000 subjects, representing the largest EEG pretraining effort to date. REVE achieves state-of-the-art results on 10 downstream EEG tasks, including motor imagery classification, seizure detection, sleep staging, cognitive load estimation, and emotion recognition. With little to no fine-tuning, it demonstrates strong generalization, and nuanced spatio-temporal modeling.
         </div>
@@ -320,11 +289,7 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-
-
-<!-- Code snippet-->
-  <section class="section" id="CodeSnippet">
+<section class="section" id="CodeSnippet">
     <div class="container is-max-desktop content" style="width: 60%;">
       <div class="bibtex-header">
         <h2 class="title is-3-no-underline">Code example</h2>
@@ -335,33 +300,34 @@
         </button>
       </div>
       <pre id="code-snippet"><code class="language-python">from transformers import AutoModel
-          
+
 model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
+pos_bank = AutoModel.from_pretrained("brain-bzh/reve-positions", trust_remote_code=True)
+
+eeg_data = ...  # EEG data (batch_size, channels, time_points)
+positions = pos_bank(montage, electrode_names) # Get positions (batch_size, channels, 3)
+output = model(eeg_data, positions)
 </code></pre>
     </div>
 </section>
-<!-- End code snippet -->
-
-
-
-<!-- Plots section -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container" style="width: 95%;">
       <h2 class="title is-centered has-text-centered is-3">
-        Dataset details (proportion of total hours)
+        Dataset Composition (Proportion of Total Hours)
       </h2>
-      <div id="plots-subplots" style="width:100%;height:500px;"></div>
+      <h3 class="subtitle is-centered has-text-centered is-4" style="margin-top: 2rem; margin-bottom: -3rem;">Data Sources</h3>
+      <div id="plots-sources" style="width:100%;height:450px;"></div>
+      <h3 class="subtitle is-centered has-text-centered is-4" style="margin-top: 2rem; margin-bottom: -3rem;">Channel Counts</h3>
+      <div id="plots-channels" style="width:100%;height:450px;"></div>
     </div>
   </div>
 </section>
-<!-- End plots section -->
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Pie chart 1 - categories
-    var pie1 = {
-      type: 'pie',
+    
+    // --- Original Data ---
+    const sourceData = {
       labels: ['TUH', 'ICARE', 'hms', 'ON_ds004395', 'ON_ds005508', 'ON_ds005509',
        'ON_ds005512', 'ON_ds005511', 'ON_ds005514', 'TDBRAIN', 'NMT',
        'ON_ds005507', 'ON_ds005506', 'ON_ds005505', 'ON_ds005510',
@@ -383,63 +349,152 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
        'ON_ds004147', 'Kalunga2016', 'Zhou2016', 'BNCI2015_003', 'Weibo2014',
        'Nakanishi2015', 'ON_ds004477', 'BNCI2014_008', 'siena', 'AlexMI',
        'ON_ds003004'],
-      values: [26847.30222222222,22707.470140277775,364.49,6718.542222222222,261.8067875,255.34669027777775,278.8516236111111,278.8516236111111,210.79156666666668,89.77984444444445,488.9667513888889,158.82725138888887,127.52424722222221,117.53890416666667,103.45369166666666,74.98458611111111,8.341666666666667,72.38144027777777,154.62972222222223,53.24724027777778,66.53361111111111,20.59473888888889,47.656977777777776,20.808333333333334,469.4838888888889,17.618427777777775,17.939719444444446,25.047656944444444,26.282777777777778,10.2,8.122222222222222,49.8,30.0,30.0,48.0907,4.835750000000001,79.90501111111111,34.24377777777777,6.85,53.72866666666667,10.940555555555555,46.32270555555555,22.727679166666668,5.277777777777778,21.10388888888889,27.17222222222222,16.901152777777778,2.517777777777778,18.120166666666666,68.10219444444445,12.95,27.607222222222223,40.52590416666667,1.0805555555555555,30.653055555555557,62.79346666666667,2.5027777777777778,19.326079166666666,51.4442,1.9166666666666667,15.477777777777778,19.215833333333332,26.815155555555556,27.06143888888889,46.266555555555556,33.52868333333333,25.787541666666662,11.379222222222221,7.460555555555556,8.347866666666667,11.451405555555557,10.713711111111111,18.234355555555556,11.900994444444445,9.866041666666666,14.10705,9.45425,12.303888888888888,11.307033333333333,17.5,37.455555555555556,9.60806111111111,2.6263125,4.999720833333333,2.8,15.368791666666668,4.452225,13.55722222222222,3.7333333333333334,30.46833333333333,1.3111111111111111,9.609444444444446
-],
-      hole: 0.6,
-      name: 'Categories',
-      textinfo: 'label+percent',
-      textposition: 'inside',
+      values: [26847.30222222222,22707.470140277775,364.49,6718.542222222222,261.8067875,255.34669027777775,278.8516236111111,278.8516236111111,210.79156666666668,89.77984444444445,488.9667513888889,158.82725138888887,127.52424722222221,117.53890416666667,103.45369166666666,74.98458611111111,8.341666666666667,72.38144027777777,154.62972222222223,53.24724027777778,66.53361111111111,20.59473888888889,47.656977777777776,20.808333333333334,469.4838888888889,17.618427777777775,17.939719444444446,25.047656944444444,26.282777777777778,10.2,8.122222222222222,49.8,30.0,30.0,48.0907,4.835750000000001,79.90501111111111,34.24377777777777,6.85,53.72866666666667,10.940555555555555,46.32270555555555,22.727679166666668,5.277777777777778,21.10388888888889,27.17222222222222,16.901152777777778,2.517777777777778,18.120166666666666,68.10219444444445,12.95,27.607222222222223,40.52590416666667,1.0805555555555555,30.653055555555557,62.79346666666667,2.5027777777777778,19.326079166666666,51.4442,1.9166666666666667,15.477777777777778,19.215833333333332,26.815155555555556,27.06143888888889,46.266555555555556,33.52868333333333,25.787541666666662,11.379222222222221,7.460555555555556,8.347866666666667,11.451405555555557,10.713711111111111,18.234355555555556,11.900994444444445,9.866041666666666,14.10705,9.45425,12.303888888888888,11.307033333333333,17.5,37.455555555555556,9.60806111111111,2.6263125,4.999720833333333,2.8,15.368791666666668,4.452225,13.55722222222222,3.7333333333333334,30.46833333333333,1.3111111111111111,9.609444444444446]
     };
-
-    // Pie chart 2 - channels
-    var pie2 = {
-      type: 'pie',
+    
+    const channelData = {
       labels: ['125', '19', '128', '21', '129', '62', '22', '52', '54', '64', '8', '24', '16', '32', '26', '60', '63', '56', '50', '31', '27', '30', '13', '6', '5', '59', '28', '14', '18', '61', '48', '3'],
-      values: [4665.8,25176.01347361111,2559.6816666666664,21594.093973611114,1802.446636111111,308.19371111111116,3673.0370500000004,294.5799597222222,190.4911375,243.44986666666668,34.20660972222222,36.867888888888885,36.36055555555556,24.655555555555555,138.5641777777778,100.341675,122.59370555555556,35.03156805555556,39.043608333333324,38.809999999999995,77.65921805555556,14.701791666666667,15.477777777777778,10.940555555555555,25.047656944444444,34.24377777777777,19.215833333333332,4.999720833333333,9.609444444444446,17.5,53.24724027777778,18.120166666666666],
-      hole: 0.6,
-    name: 'Channels',
-    textinfo: 'label+percent',
-    insidetextorientation: 'radial',
-    textposition: 'inside',
-    domain: { row: 0, column: 1 }
-      
+      values: [4665.8,25176.01347361111,2559.6816666666664,21594.093973611114,1802.446636111111,308.19371111111116,3673.0370500000004,294.5799597222222,190.4911375,243.44986666666668,34.20660972222222,36.867888888888885,36.36055555555556,24.655555555555555,138.5641777777778,100.341675,122.59370555555556,35.03156805555556,39.043608333333324,38.809999999999995,77.65921805555556,14.701791666666667,15.477777777777778,10.940555555555555,25.047656944444444,34.24377777777777,19.215833333333332,4.999720833333333,9.609444444444446,17.5,53.24724027777778,18.120166666666666]
     };
 
-    Plotly.newPlot('plots-subplots', [pie1, pie2], {
-    grid: { rows: 1, columns: 2, pattern: 'independent' },
-    height: 500,
-    showlegend: false,
-    paper_bgcolor: 'rgba(0,0,0,0)',
-    plot_bgcolor: 'rgba(0,0,0,0)',
-    annotations: [
-    {
-      text: "Categories",   // center text for pie1
-      x: 0.18, y: 0.5,      // adjust x for left pie
-      showarrow: false,
-      font: { size: 16 }
-    },
-    {
-      text: "Channels",     // center text for pie2
-      x: 0.82, y: 0.5,      // adjust x for right pie
-      showarrow: false,
-      font: { size: 16 }
+    /**
+     * Processes data to split into Top N and Others
+     * @param {object} data - {labels: string[], values: number[]}
+     * @param {number} topN - Number of top items to show
+     * @returns {object} - Processed data split into top and others
+     */
+    function processData(data, topN = 3) {
+      const combined = data.labels.map((label, i) => ({
+        label: label,
+        value: data.values[i]
+      })).sort((a, b) => b.value - a.value); // Sort descending
+
+      const topData = combined.slice(0, topN);
+      const othersData = combined.slice(topN);
+
+      const othersSum = othersData.reduce((acc, d) => acc + d.value, 0);
+
+      return {
+        top_labels: [...topData.map(d => d.label), 'Others'],
+        top_values: [...topData.map(d => d.value), othersSum],
+        others_labels: othersData.map(d => d.label),
+        others_values: othersData.map(d => d.value)
+      };
     }
-    ]
+
+    /**
+     * Creates a split pie chart visualization
+     * @param {string} elementId - The ID of the div to plot in
+     * @param {object} processedData - The object returned from processData
+     * @param {object} titles - {left: string, right: string} for chart titles
+     * @param {string} [labelSuffix=''] - Optional suffix for labels (e.g., ' ch')
+     */
+    function createSplitPieChart(elementId, processedData, titles, labelSuffix = '', rotation = 0) {
+      const { top_labels, top_values, others_labels, others_values } = processedData;
+
+      const addSuffix = (label) => label === 'Others' ? label : `${label}${labelSuffix}`;
+
+      // Chart 1: Top N + Others
+      const pie_top = {
+        type: 'pie',
+        labels: top_labels.map(addSuffix),
+        values: top_values,
+        hole: 0.6,
+        name: titles.left,
+        textinfo: 'label+percent',
+        textposition: 'inside',
+        domain: { row: 0, column: 0 },
+        automargin: true,
+        sort: false, // Keep 'Others' slice last
+        rotation: rotation
+      };
+
+      // Chart 2: Breakdown of Others
+      const pie_others = {
+        type: 'pie',
+        labels: others_labels.map(addSuffix),
+        values: others_values,
+        hole: 0.6,
+        name: titles.right,
+        textinfo: 'percent', // Only show percent inside, hover for label
+        hoverinfo: 'label+percent+value',
+        textposition: 'inside',
+        insidetextorientation: 'radial',
+        domain: { row: 0, column: 1 },
+        automargin: true,
+        sort: true,
+        direction: 'clockwise'
+      };
+
+      const layout = {
+        grid: { rows: 1, columns: 2, pattern: 'independent' },
+        height: 500,
+        showlegend: false,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        annotations: [
+          {
+            text: titles.left,
+            x: 0.20, y: 0.5, // Tuned for 'column: 0'
+            showarrow: false,
+            font: { size: 16 }
+          },
+          {
+            text: titles.right,
+            x: 0.8, y: 0.5, // Tuned for 'column: 1'
+            showarrow: false,
+            font: { size: 16 }
+          },
+          {
+            // Arrow connecting the two charts
+            showarrow: true,
+            arrowhead: 1,
+            arrowwidth: 2,
+            arrowcolor: 'rgba(0,0,0,0.4)',
+            x: 0.62, // Arrow head x (start of right pie)
+            y: 0.5,  // Arrow head y
+            ax: 0.38, // Arrow tail x (end of left pie)
+            ay: 0.5,  // Arrow tail y
+            xref: 'paper',
+            yref: 'paper',
+            axref: 'paper',
+            ayref: 'paper'
+          }
+        ]
+      };
+
+      Plotly.newPlot(elementId, [pie_top, pie_others], layout);
+    }
+
+    // --- Process and Plot ---
+    const sourceProcessed = processData(sourceData, 3);
+    const channelProcessed = processData(channelData, 6);
+    
+    createSplitPieChart('plots-sources', sourceProcessed, {
+      left: 'Top 3',
+      right: 'Others'
+    },
+    '',
+    -86
+); // No suffix for source labels
+    
+    createSplitPieChart('plots-channels', channelProcessed, {
+      left: 'Top 6',
+      right: 'Others'
+    }, ' ch', -64); // Add ' ch' suffix to channel labels
+
   });
-    });
 </script>
 
 
-<!-- Results carousel -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container" style="width: 70%;">
-      <h2 class="title is-centered has-text-centered is-3">Full results</h2>
+      <h2 class="title is-centered has-text-centered is-3">Tables</h2>
 
       <div id="plots-carousel" class="carousel results-carousel">
-        <!-- Plot 1 -->
         <div class="item">
-          <h2 class="subtitle has-text-centered">Results 1</h2>
+          <h2 class="subtitle has-text-centered">Main results (1/2)</h2>
           <table class="booktabs" style="width: 80%; text-align: center;">
     <tr>
         <td><strong>Methods</strong></td>
@@ -540,208 +595,218 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
 </table>
         </div>
 
-        <!-- Plot 2 -->
         <div class="item">
-          <h2 class="subtitle has-text-centered">Dataset platform</h2>
+          <h2 class="subtitle has-text-centered">Main results (2/2)</h2>
           <table class="booktabs" style="width: 80%; text-align: center;">
     <tr>
         <td><strong>Methods</strong></td>
-        <td><strong>TUAB</strong></td>
-        <td><strong>TUEV</strong></td>
-        <td><strong>PhysioNetMI</strong></td>
-        <td><strong>BCI-IV-2a</strong></td>
-        <td><strong>FACED</strong></td>
+        <td><strong>ISRUC</strong></td>
+        <td><strong>Mumtaz</strong></td>
+        <td><strong>MAT</strong></td>
+        <td><strong>BCI-2020-3</strong></td>
+        <td><strong>Average</strong></td>
     </tr>
-    <tr class="midrule">
+    <tr>
         <td>EEGNet</td>
-        <td>0.7642 ± 0.0036</td>
-        <td>0.3876 ± 0.0143</td>
-        <td>0.5814 ± 0.0125</td>
-        <td>0.4482 ± 0.0094</td>
-        <td>0.4090 ± 0.0122</td>
+        <td>0.7154 ± 0.0121</td>
+        <td>0.9232 ± 0.0104</td>
+        <td>0.6770 ± 0.0116</td>
+        <td>0.4413 ± 0.0096</td>
+        <td>0.5941 ± 0.0037</td>
     </tr>
     <tr>
         <td>EEGConformer</td>
-        <td>0.7758 ± 0.0049</td>
-        <td>0.4074 ± 0.0164</td>
-        <td>0.6049 ± 0.0104</td>
-        <td>0.4696 ± 0.0106</td>
-        <td>0.4559 ± 0.0125</td>
+        <td>0.7400 ± 0.0133</td>
+        <td>0.9308 ± 0.0117</td>
+        <td>0.6805 ± 0.0123</td>
+        <td>0.4506 ± 0.0133</td>
+        <td>0.6128 ± 0.0044</td>
     </tr>
     <tr>
         <td>SPaRCNet</td>
-        <td>0.7896 ± 0.0018</td>
-        <td>0.4161 ± 0.0262</td>
-        <td>0.5932 ± 0.0152</td>
-        <td>0.4635 ± 0.0117</td>
-        <td>0.4673 ± 0.0155</td>
+        <td>0.7487 ± 0.0075</td>
+        <td>0.9316 ± 0.0095</td>
+        <td>0.6879 ± 0.0107</td>
+        <td>0.4426 ± 0.0156</td>
+        <td>0.6156 ± 0.0047</td>
     </tr>
     <tr>
         <td>ContraWR</td>
-        <td>0.7746 ± 0.0041</td>
-        <td>0.4384 ± 0.0349</td>
-        <td>0.5892 ± 0.0133</td>
-        <td>0.4678 ± 0.0125</td>
-        <td>0.4887 ± 0.0078</td>
+        <td>0.7402 ± 0.0126</td>
+        <td>0.9195 ± 0.0115</td>
+        <td>0.6631 ± 0.0097</td>
+        <td>0.4257 ± 0.0162</td>
+        <td>0.6119 ± 0.0053</td>
     </tr>
     <tr>
         <td>CNN-Transformer</td>
-        <td>0.7777 ± 0.0022</td>
-        <td>0.4087 ± 0.0161</td>
-        <td>0.6053 ± 0.0118</td>
-        <td>0.4600 ± 0.0108</td>
-        <td>0.4697 ± 0.0132</td>
+        <td>0.7363 ± 0.0087</td>
+        <td>0.9305 ± 0.0068</td>
+        <td>0.6779 ± 0.0268</td>
+        <td>0.4533 ± 0.0092</td>
+        <td>0.6133 ± 0.0045</td>
     </tr>
     <tr>
         <td>FFCL</td>
-        <td>0.7848 ± 0.0038</td>
-        <td>0.3979 ± 0.0104</td>
-        <td>0.5726 ± 0.0092</td>
-        <td>0.4470 ± 0.0143</td>
-        <td>0.4673 ± 0.0158</td>
+        <td>0.7277 ± 0.0182</td>
+        <td>0.9314 ± 0.0038</td>
+        <td>0.6798 ± 0.0142</td>
+        <td>0.4678 ± 0.0197</td>
+        <td>0.6085± 0.0044</td>
     </tr>
     <tr>
         <td>ST-Transformer</td>
-        <td>0.7966 ± 0.0023</td>
-        <td>0.3984 ± 0.0228</td>
-        <td>0.6035 ± 0.0081</td>
-        <td>0.4575 ± 0.0145</td>
-        <td>0.4810 ± 0.0079</td>
+        <td>0.7381 ± 0.0205</td>
+        <td>0.9135 ± 0.0103</td>
+        <td>0.6631 ± 0.0173</td>
+        <td>0.4126 ± 0.0122</td>
+        <td>0.6071 ± 0.0048</td>
     </tr>
     <tr>
         <td>BIOT</td>
-        <td>0.7959 ± 0.0057</td>
-        <td>0.5281 ± 0.0225</td>
-        <td>0.6153 ± 0.0154</td>
-        <td>0.4748 ± 0.0093</td>
-        <td>0.5118 ± 0.0118</td>
+        <td>0.7527 ± 0.0121</td>
+        <td>0.9358 ± 0.0052</td>
+        <td>0.6875 ± 0.0186</td>
+        <td>0.4920 ± 0.0086</td>
+        <td>0.6438 ± 0.0044</td>
     </tr>
     <tr>
         <td>LaBraM-Base</td>
-        <td>0.8140 ± 0.0019</td>
-        <td>0.6409 ± 0.0065</td>
-        <td>0.6173 ± 0.0122</td>
-        <td>0.4869 ± 0.0085</td>
-        <td>0.5273 ± 0.0107</td>
+        <td>0.7633 ± 0.0102</td>
+        <td>0.9409 ± 0.0079</td>
+        <td>0.6909 ± 0.0125</td>
+        <td>0.5060 ± 0.0155</td>
+        <td>0.6653 ± 0.0031</td>
     </tr>
     <tr>
-        <td>CbraMod</td>
-        <td>0.8289 ± 0.0022</td>
-        <td>0.6671 ± 0.0107</td>
-        <td>0.6417 ± 0.0091</td>
-        <td>0.5138 ± 0.0066</td>
-        <td>0.5509 ± 0.0089</td>
+        <td>CBraMod</td>
+        <td><strong>0.7865 ± 0.0110</strong></td>
+        <td>0.9560 ± 0.0056</td>
+        <td>0.7256 ± 0.0132</td>
+        <td>0.5373 ± 0.0108</td>
+        <td>0.6898 ± 0.0031</td>
     </tr>
     <tr class="highlight">
         <td><strong>REVE-Base</strong></td>
-        <td><strong>0.8315 ± 0.0014</strong></td>
-        <td><strong>0.6759 ± 0.0229</strong></td>
-        <td><strong>0.6480 ± 0.0140</strong></td>
-        <td><strong>0.6396 ± 0.0095</strong></td>
-        <td><strong>0.5646 ± 0.0164</strong></td>
+        <td>0.7819 ± 0.0078</td>
+        <td><strong>0.9644 ± 0.0097</strong></td>
+        <td><strong>0.7660 ± 0.0355</strong></td>
+        <td><strong>0.5635 ± 0.0123</strong></td>
+        <td><strong>0.7150 ± 0.0057</strong></td>
     </tr>
 </table>
         </div>
 
-        <!-- Table 3 -->
         <div class="item">
-          <h2 class="subtitle has-text-centered">Results 3</h2>
+          <h2 class="subtitle has-text-centered">Linear probing performance against CBraMod</h2>
           <table class="booktabs" style="width: 80%; text-align: center;">
     <tr>
-        <td><strong>Methods</strong></td>
-        <td><strong>TUAB</strong></td>
-        <td><strong>TUEV</strong></td>
-        <td><strong>PhysioNetMI</strong></td>
-        <td><strong>BCI-IV-2a</strong></td>
-        <td><strong>FACED</strong></td>
+        <td><strong>Dataset</strong></td>
+        <td class="highlight"><strong>REVE-B <wbr>(Pool)</strong></td>
+        <td class="highlight"><strong>REVE-B</strong></td>
+        <td class="highlight"><strong>REVE-L <wbr>(Pool)</strong></td>
+        <td class="highlight"><strong>REVE-L</strong></td>
+        <td><strong>CBraMod <wbr>(Pool)</strong></td>
+        <td><strong>CBraMod</strong></td>
     </tr>
     <tr class="midrule">
-        <td>EEGNet</td>
-        <td>0.7642 ± 0.0036</td>
-        <td>0.3876 ± 0.0143</td>
-        <td>0.5814 ± 0.0125</td>
-        <td>0.4482 ± 0.0094</td>
-        <td>0.4090 ± 0.0122</td>
+        <td><strong>Mumtaz</strong></td>
+        <td class="highlight">0.962 ± 0.003</td>
+        <td class="highlight">0.931 ± 0.021</td>
+        <td class="highlight"><strong>0.985 ± 0.006</strong></td>
+        <td class="highlight">0.980 ± 0.009</td>
+        <td>0.859 ± 0.009</td>
+        <td>0.907 ± 0.027</td>
     </tr>
     <tr>
-        <td>EEGConformer</td>
-        <td>0.7758 ± 0.0049</td>
-        <td>0.4074 ± 0.0164</td>
-        <td>0.6049 ± 0.0104</td>
-        <td>0.4696 ± 0.0106</td>
-        <td>0.4559 ± 0.0125</td>
+        <td><strong>M. Arithmetic</strong></td>
+        <td class="highlight">0.725 ± 0.010</td>
+        <td class="highlight"><strong>0.740 ± 0.073</strong></td>
+        <td class="highlight">0.712 ± 0.008</td>
+        <td class="highlight">0.665 ± 0.103</td>
+        <td>0.500 ± 0.000</td>
+        <td>0.605 ± 0.020</td>
     </tr>
     <tr>
-        <td>SPaRCNet</td>
-        <td>0.7896 ± 0.0018</td>
-        <td>0.4161 ± 0.0262</td>
-        <td>0.5932 ± 0.0152</td>
-        <td>0.4635 ± 0.0117</td>
-        <td>0.4673 ± 0.0155</td>
+        <td><strong>TUAB</strong></td>
+        <td class="highlight">0.810 ± 0.007</td>
+        <td class="highlight">0.809 ± 0.004</td>
+        <td class="highlight"><strong>0.821 ± 0.004</strong></td>
+        <td class="highlight">0.809 ± 0.004</td>
+        <td>0.500 ± 0.000</td>
+        <td>0.500 ± 0.000</td>
     </tr>
     <tr>
-        <td>ContraWR</td>
-        <td>0.7746 ± 0.0041</td>
-        <td>0.4384 ± 0.0349</td>
-        <td>0.5892 ± 0.0133</td>
-        <td>0.4678 ± 0.0125</td>
-        <td>0.4887 ± 0.0078</td>
+        <td><strong>PhysioNetMI</strong></td>
+        <td class="highlight">0.537 ± 0.005</td>
+        <td class="highlight">0.510 ± 0.012</td>
+        <td class="highlight">0.551 ± 0.001</td>
+        <td class="highlight"><strong>0.617 ± 0.000</strong></td>
+        <td>0.256 ± 0.002</td>
+        <td>0.531 ± 0.015</td>
     </tr>
     <tr>
-        <td>CNN-Transformer</td>
-        <td>0.7777 ± 0.0022</td>
-        <td>0.4087 ± 0.0161</td>
-        <td>0.6053 ± 0.0118</td>
-        <td>0.4600 ± 0.0108</td>
-        <td>0.4697 ± 0.0132</td>
+        <td><strong>BCIC-IV-2a</strong></td>
+        <td class="highlight">0.432 ± 0.004</td>
+        <td class="highlight">0.517 ± 0.015</td>
+        <td class="highlight">0.534 ± 0.001</td>
+        <td class="highlight"><strong>0.603 ± 0.011</strong></td>
+        <td>0.287 ± 0.023</td>
+        <td>0.376 ± 0.006</td>
     </tr>
     <tr>
-        <td>FFCL</td>
-        <td>0.7848 ± 0.0038</td>
-        <td>0.3979 ± 0.0104</td>
-        <td>0.5726 ± 0.0092</td>
-        <td>0.4470 ± 0.0143</td>
-        <td>0.4673 ± 0.0158</td>
+        <td><strong>ISRUC</strong></td>
+        <td class="highlight">0.697 ± 0.011</td>
+        <td class="highlight">0.662 ± 0.030</td>
+        <td class="highlight">0.743 ± 0.004</td>
+        <td class="highlight"><strong>0.758 ± 0.001</strong></td>
+        <td>0.407 ± 0.049</td>
+        <td>0.430 ± 0.043</td>
     </tr>
     <tr>
-        <td>ST-Transformer</td>
-        <td>0.7966 ± 0.0023</td>
-        <td>0.3984 ± 0.0228</td>
-        <td>0.6035 ± 0.0081</td>
-        <td>0.4575 ± 0.0145</td>
-        <td>0.4810 ± 0.0079</td>
+        <td><strong>HMC</strong></td>
+        <td class="highlight">0.647 ± 0.008</td>
+        <td class="highlight">0.604 ± 0.008</td>
+        <td class="highlight">0.703 ± 0.003</td>
+        <td class="highlight"><strong>0.710 ± 0.007</strong></td>
+        <td>0.368 ± 0.001</td>
+        <td>0.538 ± 0.009</td>
     </tr>
     <tr>
-        <td>BIOT</td>
-        <td>0.7959 ± 0.0057</td>
-        <td>0.5281 ± 0.0225</td>
-        <td>0.6153 ± 0.0154</td>
-        <td>0.4748 ± 0.0093</td>
-        <td>0.5118 ± 0.0118</td>
+        <td><strong>BCIC2020-3</strong></td>
+        <td class="highlight">0.234 ± 0.009</td>
+        <td class="highlight"><strong>0.390 ± 0.017</strong></td>
+        <td class="highlight">0.274 ± 0.001</td>
+        <td class="highlight">0.378 ± 0.021</td>
+        <td>0.214 ± 0.003</td>
+        <td>0.374 ± 0.007</td>
     </tr>
     <tr>
-        <td>LaBraM-Base</td>
-        <td>0.8140 ± 0.0019</td>
-        <td>0.6409 ± 0.0065</td>
-        <td>0.6173 ± 0.0122</td>
-        <td>0.4869 ± 0.0085</td>
-        <td>0.5273 ± 0.0107</td>
+        <td><strong>TUEV</strong></td>
+        <td class="highlight">0.592 ± 0.008</td>
+        <td class="highlight">0.508 ± 0.073</td>
+        <td class="highlight"><strong>0.630 ± 0.003</strong></td>
+        <td class="highlight">0.550 ± 0.014</td>
+        <td>0.219 ± 0.009</td>
+        <td>0.482 ± 0.037</td>
     </tr>
     <tr>
-        <td>CbraMod</td>
-        <td>0.8289 ± 0.0022</td>
-        <td>0.6671 ± 0.0107</td>
-        <td>0.6417 ± 0.0091</td>
-        <td>0.5138 ± 0.0066</td>
-        <td>0.5509 ± 0.0089</td>
+        <td><strong>Faced</strong></td>
+        <td class="highlight">0.240 ± 0.010</td>
+        <td class="highlight">0.422 ± 0.028</td>
+        <td class="highlight">0.283 ± 0.003</td>
+        <td class="highlight"><strong>0.469 ± 0.007</strong></td>
+        <td>0.117 ± 0.005</td>
+        <td>0.261 ± 0.013</td>
     </tr>
-    <tr class="highlight">
-        <td><strong>REVE-Base</strong></td>
-        <td><strong>0.8315 ± 0.0014</strong></td>
-        <td><strong>0.6759 ± 0.0229</strong></td>
-        <td><strong>0.6480 ± 0.0140</strong></td>
-        <td><strong>0.6396 ± 0.0095</strong></td>
-        <td><strong>0.5646 ± 0.0164</strong></td>
+    <tr>
+        <td><strong>Average</strong></td>
+        <td class="highlight">0.586</td>
+        <td class="highlight">0.609</td>
+        <td class="highlight">0.623</td>
+        <td class="highlight"><strong>0.654</strong></td>
+        <td>0.373</td>
+        <td>0.501</td>
     </tr>
 </table>
         </div>
@@ -749,13 +814,7 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
     </div>
   </div>
 </section>
-<!-- End results carousel -->
-
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -773,10 +832,7 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
 }</code></pre>
     </div>
 </section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -794,11 +850,5 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
+</body>
   </html>
