@@ -305,7 +305,7 @@ model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
 pos_bank = AutoModel.from_pretrained("brain-bzh/reve-positions", trust_remote_code=True)
 
 eeg_data = ...  # EEG data (batch_size, channels, time_points)
-positions = pos_bank(montage, electrode_names) # Get positions (batch_size, channels, 3)
+positions = pos_bank(electrode_names) # Get positions (batch_size, channels, 3)
 output = model(eeg_data, positions)
 </code></pre>
     </div>
