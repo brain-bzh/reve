@@ -309,8 +309,7 @@ eeg_data = ...  # EEG data (batch_size, channels, time_points), must be sampled 
 electrode_names = [...]  # List of electrode names corresponding to the channels in eeg_data
 
 positions = pos_bank(electrode_names) # Get positions (channels, 3)
-positions = positions.expand(eeg_data.size(0), -1, -1)  
-# Expand to (batch_size, channels, 3)
+positions = positions.expand(eeg_data.size(0), -1, -1)  # Expand to (batch_size, channels, 3)
 
 output = model(eeg_data, positions)
 </code></pre>
