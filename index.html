@@ -301,11 +301,19 @@
       </div>
       <pre id="code-snippet"><code class="language-python">from transformers import AutoModel
 
-model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
-pos_bank = AutoModel.from_pretrained("brain-bzh/reve-positions", trust_remote_code=True)
+from transformers import AutoModel
 
-eeg_data = ...  # EEG data (batch_size, channels, time_points)
-positions = pos_bank(electrode_names) # Get positions (batch_size, channels, 3)
+pos_bank = AutoModel.from_pretrained("brain-bzh/reve-positions", trust_remote_code=True)
+model = AutoModel.from_pretrained("brain-bzh/reve-base", trust_remote_code=True)
+
+eeg_data = ...  # EEG data (batch_size, channels, time_points), must be sampled at 200 Hz
+electrode_names = [...]  # List of electrode names corresponding to the channels in eeg_data
+
+positions = pos_bank(electrode_names) # Get positions (channels, 3)
+
+## Expand the positions vector to match the batch size 
+positions = positions.expand(eeg_data.size(0), -1, -1)  # (batch_size, channels, 3)
+
 output = model(eeg_data, positions)
 </code></pre>
     </div>
