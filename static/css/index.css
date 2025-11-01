@@ -779,3 +779,14 @@ table.booktabs tbody tr:last-child {
 .booktabs td.highlight{
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
 }
+
+.token.operator,
+.token.number,
+.token.boolean {
+	background: none !important;
+	text-shadow: none !important;
+  padding: inherit !important;
+  font: inherit !important;
+  margin: inherit !important;
+  display: inline-block;
+}
