@@ -771,6 +771,24 @@ table.booktabs tbody tr:last-child {
   border-bottom: 2px solid black;
 }
 
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+/* Ensure tables fill the container but don't force overflow if not needed */
+.table-container table {
+  width: 100%;
+  min-width: 600px; /* Forces scroll on small screens if table is squeezed */
+  margin: 0 auto; /* Center table within container */
+  border: none; /* Reset border as container handles it */
+}
+
 .booktabs tr.midrule td {
   border-top: 2px solid #000; /* thicker than normal row lines */
 }
