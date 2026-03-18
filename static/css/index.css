@@ -1,7 +1,8 @@
 /* Modern CSS Variables for consistent theming */
 :root {
-  --primary-color: color-mix(in srgb, var(--primary-hover) 80%, black); 
-  --primary-hover: rgb(115, 203, 230);;
+  --primary-color: color-mix(in srgb, var(--primary-hover) 80%, black);
+  --primary-hover: rgb(115, 203, 230);
+  ;
   --secondary-color: #64748b;
   --accent-color: #0ea5e9;
   --text-primary: #1e293b;
@@ -68,18 +69,18 @@ body {
 }
 
 .footer .icon-link {
-    font-size: 25px;
-    color: var(--text-secondary);
-    transition: var(--transition);
+  font-size: 25px;
+  color: var(--text-secondary);
+  transition: var(--transition);
 }
 
 .footer .icon-link:hover {
-    color: var(--primary-color);
-    transform: translateY(-2px);
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
 .link-block a {
-    margin: 8px 4px;
+  margin: 8px 4px;
 }
 
 .dnerf {
@@ -115,11 +116,11 @@ body {
 
 /* Publication Content Styling */
 .publication-title {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 800 !important;
-    color: var(--text-primary) !important;
-    margin-bottom: 2rem !important;
-    line-height: 1.1 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 800 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.1 !important;
 }
 
 .publication-banner {
@@ -146,58 +147,58 @@ body {
 }
 
 .publication-authors {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .publication-venue {
-    color: var(--text-secondary);
-    width: fit-content;
-    font-weight: 600;
-    background: var(--background-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    margin-top: 1rem;
-    display: inline-block;
+  color: var(--text-secondary);
+  width: fit-content;
+  font-weight: 600;
+  background: var(--background-accent);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 .publication-awards {
-    color: #ef4444;
-    width: fit-content;
-    font-weight: 700;
-    background: linear-gradient(135deg, #fef2f2, #fee2e2);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    border-left: 4px solid #ef4444;
-    margin-top: 1rem;
+  color: #ef4444;
+  width: fit-content;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fef2f2, #fee2e2);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid #ef4444;
+  margin-top: 1rem;
 }
 
 .publication-authors a {
-   color: var(--primary-color) !important;
-   text-decoration: none;
-   font-weight: 600;
-   transition: var(--transition);
-   position: relative;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
 }
 
 .publication-authors a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: var(--gradient-accent);
-    transition: var(--transition);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--gradient-accent);
+  transition: var(--transition);
 }
 
 .publication-authors a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .publication-authors a:hover {
-    color: var(--primary-hover) !important;
+  color: var(--primary-hover) !important;
 }
 
 .author-block {
@@ -218,28 +219,28 @@ body {
 
 /* Modern Video and Carousel Styling */
 .publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    border-radius: var(--border-radius-lg) !important;
-    box-shadow: var(--shadow-xl);
-    transition: var(--transition);
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-xl);
+  transition: var(--transition);
 }
 
 .publication-video:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
 }
 
 .publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius-lg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-lg);
 }
 
 .publication-body img {
@@ -302,14 +303,15 @@ body {
   transform: scale(1.2);
 }
 
-.eql-cntrb { 
+.eql-cntrb {
   font-size: 0.875rem;
   color: var(--text-light);
   font-style: italic;
 }
 
 /* Section Titles */
-.title.is-3, .title.is-3-no-underline {
+.title.is-3,
+.title.is-3-no-underline {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   color: var(--text-primary);
@@ -603,54 +605,54 @@ code {
   .hero-body {
     padding: 2rem 1rem;
   }
-  
+
   .publication-header .hero-body {
     padding: 3rem 1rem 2rem;
   }
-  
+
   .publication-title {
     font-size: 2.5rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
   }
-  
+
   .publication-authors {
     font-size: 1rem !important;
   }
-  
+
   .button {
     margin: 0.25rem !important;
     font-size: 0.875rem !important;
     padding: 0.75rem 1rem !important;
   }
-  
+
   .more-works-container {
     bottom: 2rem;
     right: 1rem;
     top: auto;
   }
-  
+
   .more-works-btn {
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
   }
-  
+
   .more-works-dropdown {
     width: calc(100vw - 2rem);
     right: -1rem;
     bottom: calc(100% + 0.5rem);
     top: auto;
   }
-  
+
   .results-carousel .item {
     margin: 0.5rem;
     padding: 1rem;
   }
-  
+
   .teaser .hero-body {
     padding: 1rem;
   }
-  
+
   .content.has-text-justified {
     font-size: 1rem;
   }
@@ -660,23 +662,23 @@ code {
   .publication-title {
     font-size: 2rem !important;
   }
-  
+
   .hero-body {
     padding: 1.5rem 0.75rem;
   }
-  
+
   .more-works-container {
     position: fixed;
     bottom: 2rem;
     right: 1rem;
     z-index: 1000;
   }
-  
+
   .more-works-btn {
     padding: 0.5rem 0.75rem;
     font-size: 0.75rem;
   }
-  
+
   .more-works-dropdown {
     position: absolute;
     bottom: calc(100% + 0.5rem);
@@ -684,12 +686,12 @@ code {
     width: calc(100vw - 2rem);
     max-width: 90vw;
   }
-  
+
   .link-block {
     display: block;
     margin-bottom: 0.5rem;
   }
-  
+
   .button {
     width: 100%;
     justify-content: center;
@@ -701,7 +703,7 @@ code {
   .hero-body {
     padding: 3rem 2rem;
   }
-  
+
   .publication-header .hero-body {
     padding: 4rem 2rem 3rem;
   }
@@ -713,13 +715,15 @@ code {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.hero, .section {
+.hero,
+.section {
   animation: fadeInUp 0.6s ease-out;
 }
 
@@ -737,11 +741,12 @@ a:focus {
   .more-works-container {
     display: none;
   }
-  
-  .hero, .section {
+
+  .hero,
+  .section {
     animation: none;
   }
-  
+
   .button {
     background: transparent !important;
     color: var(--text-primary) !important;
@@ -756,17 +761,21 @@ table.booktabs {
   margin: 1em auto;
   font-size: 14px;
 }
+
 table.booktabs th,
 table.booktabs td {
   padding: 6px 12px;
   text-align: center;
 }
+
 table.booktabs thead tr:first-child {
   border-bottom: 2px solid black;
 }
+
 table.booktabs tbody tr {
   border-bottom: 1px solid #aaa;
 }
+
 table.booktabs tbody tr:last-child {
   border-bottom: 2px solid black;
 }
@@ -774,7 +783,8 @@ table.booktabs tbody tr:last-child {
 .table-container {
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on iOS */
   margin-bottom: 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
@@ -784,27 +794,179 @@ table.booktabs tbody tr:last-child {
 /* Ensure tables fill the container but don't force overflow if not needed */
 .table-container table {
   width: 100%;
-  min-width: 600px; /* Forces scroll on small screens if table is squeezed */
-  margin: 0 auto; /* Center table within container */
-  border: none; /* Reset border as container handles it */
+  min-width: 600px;
+  /* Forces scroll on small screens if table is squeezed */
+  margin: 0 auto;
+  /* Center table within container */
+  border: none;
+  /* Reset border as container handles it */
 }
 
 .booktabs tr.midrule td {
-  border-top: 2px solid #000; /* thicker than normal row lines */
+  border-top: 2px solid #000;
+  /* thicker than normal row lines */
 }
 
 .booktabs tr.highlight td,
-.booktabs td.highlight{
+.booktabs td.highlight {
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
 .token.operator,
 .token.number,
 .token.boolean {
-	background: none !important;
-	text-shadow: none !important;
+  background: none !important;
+  text-shadow: none !important;
   padding: inherit !important;
   font: inherit !important;
   margin: inherit !important;
   display: inline-block;
+}
+
+/* Changelog Section Styling */
+.changelog-section {
+  background: var(--background-secondary);
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.changelog-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.changelog-item {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.changelog-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.75rem;
+  /* Fine-tuned for perfect alignment with the first line of text */
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--background-secondary), 0 0 0 6px var(--primary-hover);
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.changelog-item:hover::before {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 6px var(--background-secondary), 0 0 0 10px var(--primary-hover);
+}
+
+.changelog-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2.1rem;
+  /* Adjusted for better alignment with the dot at 1.75rem */
+  width: 2px;
+  height: calc(100% + 1.5rem);
+  background: var(--border-color);
+  z-index: 1;
+}
+
+.changelog-content {
+  background: var(--background-primary);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.changelog-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-accent);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.changelog-content:hover::before {
+  opacity: 1;
+}
+
+.changelog-content:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.changelog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.changelog-date {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.changelog-tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-sm);
+}
+
+.tag-update {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.tag-new {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.tag-fix {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.changelog-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .changelog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .changelog-item {
+    padding-left: 2rem;
+  }
 }
