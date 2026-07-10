@@ -970,3 +970,83 @@ table.booktabs tbody tr:last-child {
     padding-left: 2rem;
   }
 }
+
+/* Hiring banner: a calm callout between the links and the first figure */
+.hiring-banner-wrap {
+  display: flex;
+  justify-content: center;
+  margin: -1.5rem auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.hiring-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 760px;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+  border: 1px solid #bae6fd;
+  border-left: 4px solid var(--accent-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.hiring-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hiring-banner-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: white;
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.hiring-banner-text {
+  color: #0c4a6e;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hiring-banner-text strong {
+  color: #0369a1;
+}
+
+.hiring-banner-text a {
+  color: #0369a1;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #7dd3fc;
+  transition: var(--transition);
+}
+
+.hiring-banner-text a:hover {
+  border-bottom-color: #0369a1;
+}
+
+@media screen and (max-width: 600px) {
+  .hiring-banner-wrap {
+    margin-top: -1rem;
+  }
+
+  .hiring-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.1rem;
+  }
+
+  .hiring-banner-text {
+    font-size: 0.92rem;
+  }
+}
